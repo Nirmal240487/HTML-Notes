@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<h2>Text Input</h2>
+
+	<form>
+	  First name:<br>
+	  <input type="text" name="firstname" placeholder="First name">
+	  <br>
+	  Last name:<br>
+	  <input type="text" name="lastname" size="20">
+	</form>
+
+	<form style="Width:200px">
+		<fieldset>
+			<legend>Select Gender</legend>
+			  <input type="radio" name="gender" value="male" checked> Male<br>
+			  <input type="radio" name="gender" value="female"> Female<br>
+			  <input type="radio" name="gender" value="other"> Other
+			  <br><br>
+			  <input type="submit" value="Submit">
+		</fieldset>
+
+		<fieldset>
+			<legend>Select Cars</legend>
+			<select name="cars">
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			  <option value="fiat">Fiat</option>
+			  <option value="audi">Audi</option>
+			</select>
+		</fieldset>
+	</form>
+
+	<form>
+		<textarea name="message" rows="10" cols="30">
+			The cat was playing in the garden.
+		</textarea>
+	</form>
+
+	<form>
+		<button type="button" onclick="alert('Hello World!')">
+			Click Me!
+		</button>
+	</form>
+	
+	<form>
+	  <input list="browsers" name="browser">
+	  <datalist id="browsers">
+	    <option value="Internet Explorer">
+	    <option value="Firefox">
+	    <option value="Chrome">
+	    <option value="Opera">
+	    <option value="Safari">
+	  </datalist>
+	  <input type="submit">
+	</form>
+
+	</form>
+		0<input type="range" id="a" name="a" value="50">100
+  	</form>
+
+  	<h3>RESET</h3>
+  	<form action="/action_page.php">
+		First name:<br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form> 
+
+	<form>
+	  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+	  <input type="checkbox" name="vehicle2" value="Car"> I have a car <br>
+	  <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+	  <br><br>
+	  <input type="color" name="favcolor" value="#ff0000">
+	</form>
+
+	<form>
+	  Select a file: <input type="file" name="myFile">
+	</form>
+	<form>
+	  Quantity:
+	  <input type="number" name="points" min="0" max="100" step="10" value="30">
+	</form>
+	
+	
+	<nav>
+	  <a href="/html/">HTML</a> |
+	  <a href="/css/">CSS</a> |
+	  <a href="/js/">JavaScript</a> |
+	  <a href="/jquery/">jQuery</a>
+	</nav>
+
+
+	<p>Note that the form itself is not visible.</p>
+
+	<p>Also note that the default width of a text input field is 20 characters.</p>
+
+</body>
+</html>

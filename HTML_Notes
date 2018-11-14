@@ -1,0 +1,232 @@
+HTML is a declarative language that tells the interpreter what to do, not how to do it.
+
+Begin a html document is <!DOCTYPE html> 
+Then add a <html></html>. Anything between these two tags will be interpreted as HTML code
+
+<head> element contains metadata about the web page.
+
+<title> tag is placed in between the "head" tag and it specifies the title of the web page.
+
+HTML Style Element
+
+Use the style attribute for styling HTML elements
+- background-color 
+- color 
+- font-family 
+- font-size 
+- text-align 
+- border
+- padding
+- margin
+- text-decoration
+
+HTML Link Element
+
+The <link> element is used to link to external style sheets.
+<link rel="stylesheet" href="mystyle.css">
+
+
+
+HTML5 <picture> element 
+
+To add more flexibility when specifying image resources.
+The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.
+Each <source> element have attributes describing when their image is the most suitable.
+The browser will use the first <source> element with matching attribute values, and ignore any following <source> elements.
+
+HTML <mark> Element
+
+The HTML <mark> element defines marked or highlighted text.
+
+HTML <del> Element
+
+The HTML <del> element defines deleted (removed) text.
+
+HTML <ins> Element
+
+The HTML <ins> element defines inserted (added) text.
+
+HTML <sup> Element
+
+The HTML <sup> element defines superscripted text.
+
+HTML <sub> Element
+
+The HTML <sub> element defines subscripted text.
+
+HTML <q> for Short Quotations
+
+The HTML <q> element defines a short quotation.
+Browsers usually insert quotation marks around the <q> element.
+
+HTML <blockquote> for Quotations
+
+The HTML <blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+
+HTML <abbr> for Abbreviations
+
+The HTML <abbr> element defines an abbreviation or an acronym.
+
+HTML <cite> for Work Title
+
+The HTML <cite> element defines the title of a work.
+Browsers usually display <cite> elements in italic.
+
+HTML "Pre" Element
+
+Defines preFormatted text. Text inside this will always display in a fixed width font and will preserve both spaces and line breaks.
+
+HTML Horizontal rule
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+HTML Links
+
+<a href="https://www.google.com">Google</a>
+THe <a> is called anchor element and it gives the ability to link to other web pages. It contains an href attribute which stands for hyperlink reference and is used to link to a path or address where the file is located.
+A "target" attribute is specified with an "a" element which instructs the browser how to react when a url is tapped.
+
+<em>..</em>
+
+Emphasizes text. Shows them in itlaics
+
+<strong>...</strong>
+
+Shows the text in bold
+
+<img>
+
+Allows to add an image to a web page. Its a self closing tag.
+It has a required attribute called "src" which must be set to an image source or the location of the image.
+Can also contain an attribute called "alt" that if present should provide a meaningful description of the image.
+
+<video>
+
+Allows the display of videos in a web page. Requires both opening and closing tags. needs to have a "src" attribute.
+Along with src, "width" and "height" attributes can be used to set the size of the video displayed in the browser.
+"Controls" attribute can be added to include basic video controls like pause, play and skip.
+
+Image Maps
+
+The <map> tag defines an image map. An image map is an image with clickable areas.
+HTML Table
+
+Adding a Caption
+To add a caption to a table, use the <caption> tag:
+
+The table heading element is used just like a table data element, except with a relevant title. Just like table data, a table heading must be placed within a table row.
+The "scope" attribute in a table header element can take one of two possible values, "row", "col".
+The "colspan" attribute of table data "td" element accepts an integer and denotes the number of columns the data spans across.
+The "rowspan" attribute is used for data that spans multiple rows. It accepts an integer to denote the number of rows it spans across.
+
+Tables can be split into three main sections: a head, a body, and a footer.
+A table's head is created with the <thead> element.
+A table's body is created with the <tbody> element.
+A table's footer is created with the <tfoot> element.
+
+Unordered List
+
+list-style-type: disc, circle, square, none
+
+HTML Description Lists
+
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term
+
+Block Level Elements
+
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+
+<address>  <article>  <aside>  <blockquote>
+<canvas>  <dd>  <div>  <dl> <dt>
+<fieldset>  <figcaption>  <figure>  <footer>
+<form>  <h1>-<h6>  <header>  <hr>  <li>
+<main>  <nav>  <noscript>  <ol>  <output>
+<p> <pre> <section> <table> <tfoot> <ul> <video>
+
+
+HTML IFrames
+
+An iframe is used to display a web page within a web page.
+<iframe src="URL"></iframe>
+
+Use the height and width attributes to specify the size of the iframe.
+
+An iframe can be used as the target frame for a link.
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+Media Queries
+
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+With media queries you can define completely different styles for different browser sizes.
+
+Computer codes
+
+The HTML <kbd> element represents user input, like keyboard input or voice commands.
+The HTML <samp> element represents output from a program or computing system.
+The HTML <code> element defines a fragment of computer code.
+The HTML <var> element defines a variable. The variable could be a variable in a mathematical expression or a variable in programming context.
+
+HTML Form Element
+
+The HTML <form> element defines a form that is used to collect user input.
+The <input> element is a form element that can be displayed in several ways depending on type attribute.
+input type= "text", "radio", "submit"
+
+Each input field must have a name attribute to be submitted.
+If the name attribute is omitted, the data of that input field will not be sent at all.
+
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element.
+The <select> element defines a drop-down list.
+	The <option> elements defines an option that can be selected.
+	By default, the first item in the drop-down list is selected.
+	To define a pre-selected option, add the selected attribute to the option.
+	<option value="fiat" selected>Fiat</option>
+"size" attribute can be used to specify the number of visible values in the dropdown.
+Use the "multiple" attribute to allow the user to select more than one value.
+
+HTML Text Area
+
+The <textarea> element defines a multi-line input field.
+
+HTML5 Datalist Element
+
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+Users will see a drop-down list of the pre-defined options as they input data.
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+HTMl Input types
+
+<input type="text"> defines a one-line text input field.
+<input type="password"> defines a password field.
+<input type="submit"> defines a button for submitting form data to a form-handler.
+<input type="reset"> defines a reset button that will reset all form values to their default values.
+<input type="radio"> defines a radio button. Radio buttons let a user select ONLY ONE of a limited number of choices.
+<input type="checkbox"> defines a checkbox.
+<input type="button"> defines a button.
+The <input type="color"> is used for input fields that should contain a color.
+The <input type="date"> is used for input fields that should contain a date. Use min and max attributes to add restrictions to dates.
+The <input type="email"> is used for input fields that should contain an e-mail address.
+The <input type="file"> defines a file-select field and a "Browse" button for file uploads.
+The <input type="number"> defines a numeric input field.
+
+
+HTML Input Attributes
+
+The "value" attribute specifies the initial value for an input field.
+The "readonly" attribute specifies that the input field is read only (cannot be changed).
+The disabled attribute specifies that the input field is disabled. A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form.
+The size attribute specifies the size (in characters) for the input field.
+The autocomplete attribute specifies whether a form or input field should have autocomplete on or off. When autocomplete is on, the browser automatically completes the input values based on values that the user has entered before.
+The autofocus attribute specifies that the input field should automatically get focus when the page loads.
+The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).
+
+
+
+
+
+

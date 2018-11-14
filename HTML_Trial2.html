@@ -1,0 +1,87 @@
+<!Doctype HTML>
+<html>
+<head>
+	<!-- define the character set used -->
+	<meta charset="UTF-8">
+	<!-- description of the webpage -->
+  	<meta name="description" content="Free Web tutorials">
+  	<!-- keywords for search engines -->
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<!-- author of the page -->
+  	<meta name="author" content="John Doe">
+  	<!-- refresh document every 30 seconds -->
+  	<!-- <meta http-equiv="refresh" content="10"> -->
+
+	<!-- This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling. -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		p {
+		    color: blue;
+		    font-family: verdana;
+		    font-size: 300%;
+		}
+		h1  {
+		    color: red;
+		    font-family: courier;
+		    font-size: 160%;
+		    border: 1px solid powderblue;
+		    padding: 30px;
+		    margin: 50px;
+		    text-decoration: underline;
+		}
+		table, tr, td, th {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		li {
+			display: inline;
+		}
+		<!-- Use a media query to add a breakpoint at 800px: -->
+		@media screen and (max-width: 800px) {
+		  .left, .main, .right {
+		    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+		}
+
+	</style>
+	<title>HTML TRIALS By NIRMAL</title>
+</head>
+<body>
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	<br>
+	<img src="temp.png" alt="Workplace" usemap="#workmap" style="width:128px">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+	</map>
+
+	<dl>
+	  <dt>Coffee</dt>
+	  <dd>- black hot drink</dd>
+	  <dt>Milk</dt>
+	  <dd>- white cold drink</dd>
+	</dl>
+
+	<iframe src="HTML_Trial.html" name="iframe_a"></iframe>
+	<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+	Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+	<pre>
+		<code>
+			x = 5;
+			y = 6;
+			z = x + y;
+		</code>
+	</pre>
+	<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+	<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+</body>
+<html>
